@@ -63,8 +63,8 @@ const About = () => {
             className="flex items-center justify-center w-full h-full"
           >
             <img
-              src="public/assets/boxgbg2.jpg"
-              alt="Tech Stack"
+              src="../assets/boxgbg2.jpg"
+              alt="blockBg"
               className="w-full h-full object-cover "
             />
             <p className="absolute top-6 left-6 text-white font-medium">
