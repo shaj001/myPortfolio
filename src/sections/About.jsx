@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import { Globe } from "../components/globe";
-import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/FrameWorks";
-import ViewResumeButton from "../components/ViewResumePopup";
-import { mySocials } from "../constants/myData";
+import { Globe } from "../components/globe.jsx";
+import CopyEmailButton from "../components/CopyEmailButton.jsx";
+import { Frameworks } from "../components/Frameworks.jsx";
+import ViewResumeButton from "../components/ViewResumePopup.jsx";
+import { mySocials } from "../constants/myData.js";
 
 const About = () => {
   const downloadResume = () => {

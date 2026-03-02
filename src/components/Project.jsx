@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { myProjects } from "../constants/myData"; 
-import ProjectCard from "./ProjectCard";
-import ProjectDetails from "./ProjectDetails";
+import { myProjects } from "../constants/myData.js"; 
+import ProjectCard from "./ProjectCard.jsx";
+import ProjectDetails from "./ProjectDetails.jsx";
 
 const Projects = () => {
   // controls show more button
