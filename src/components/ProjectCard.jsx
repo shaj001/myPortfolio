@@ -8,7 +8,7 @@ const ProjectCard = ({ project, onOpen }) => {
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-48 object-cover"
+        className="w-full h-48 object-cover rounded-t-xl"
       />
 
       <div className="p-5 flex flex-col flex-grow">
@@ -47,11 +47,11 @@ const ProjectCard = ({ project, onOpen }) => {
           <button
             onClick={(e) => {
               e.stopPropagation(); // prevents modal trigger
-              if (project.href) {
-                window.open(project.href, "_blank");
+              if (project.github) {
+                window.open(project.github, "_blank");
               }
             }}
-            className="flex-1 px-3 py-2 text-sm bg-neutral-800 rounded hover:bg-neutral-700"
+            className="flex-1 px-3 py-2 text-sm bg-neutral-800 rounded hover:bg-neutral-700 cursor-pointer hover:scale-[1.05] transition duration-200 "
           >
             GitHub
           </button>
@@ -60,11 +60,11 @@ const ProjectCard = ({ project, onOpen }) => {
           <button
             onClick={(e) => {
               e.stopPropagation();
-              if (project.href) {
-                window.open(project.href, "_blank");
+              if (project.live) {
+                window.open(project.live, "_blank");
               }
             }}
-            className="flex-1 px-3 py-2 text-sm bg-indigo-600 rounded hover:bg-indigo-500"
+            className="flex-1 px-3 py-2 text-sm bg-indigo-600 rounded hover:bg-indigo-500 cursor-pointer hover:scale-[1.05] transition duration-200 "
           >
             Live
           </button>

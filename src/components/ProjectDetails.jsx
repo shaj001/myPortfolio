@@ -1,3 +1,4 @@
+  
 const ProjectDetails = ({ project, closeModal }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm ">
@@ -19,7 +20,7 @@ const ProjectDetails = ({ project, closeModal }) => {
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-64 object-cover rounded-lg mb-4"
+          className="w-full h-64 object-cover rounded-lg mb-4 "
         />
 
         {/* Title */}
@@ -36,13 +37,13 @@ const ProjectDetails = ({ project, closeModal }) => {
         </ul>
 
         {/* Tech Stack Logos */}
-        <div className="flex flex-wrap gap-3 mb-4">
+        <div className="flex flex-wrap gap-5 mb-4 animate-pop">
           {project.tags.map((tag) => (
             <img
               key={tag.id}
               src={tag.path}
               alt={tag.name}
-              className="w-8 h-8"
+              className="w-8 h-8 flex"
             />
           ))}
         </div>
@@ -53,11 +54,11 @@ const ProjectDetails = ({ project, closeModal }) => {
           <button
             onClick={(e) => {
               e.stopPropagation(); // prevents modal trigger
-              if (project.href) {
-                window.open(project.href, "_blank");
+              if (project.github) {
+                window.open(project.github, "_blank");
               }
             }}
-            className="flex-1 px-3 py-2 text-sm bg-neutral-800 rounded hover:bg-neutral-700"
+            className="flex-1 px-3 py-2 text-sm bg-neutral-800 rounded hover:bg-neutral-700 cursor-pointer hover:scale-[1.05] transition duration-200 "
           >
             GitHub
           </button>
@@ -66,11 +67,11 @@ const ProjectDetails = ({ project, closeModal }) => {
           <button
             onClick={(e) => {
               e.stopPropagation();
-              if (project.href) {
-                window.open(project.href, "_blank");
+              if (project.live) {
+                window.open(project.live, "_blank");
               }
             }}
-            className="flex-1 px-3 py-2 text-sm bg-indigo-600 rounded hover:bg-indigo-500"
+            className="flex-1 px-3 py-2 text-sm bg-indigo-600 rounded hover:bg-indigo-500 cursor-pointer hover:scale-[1.05] transition duration-200 "
           >
             Live
           </button>

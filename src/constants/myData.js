@@ -29,43 +29,36 @@ export const myProjects = [
   //   ],
   // },
 
-   {
+  
+
+     {
     id: 1,
-    title: "E-commerce Platform",
+    title: "ZORA - SaaS Landing Page",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A modern, high-performance frontend landing page for ZORA, a conceptual AI-powered video editing tool. This project is a pure frontend implementation showcasing responsive design, smooth animations, and a clean user interface built with React and Tailwind CSS.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Responsive Design: Fully optimized for desktop, tablet, and mobile devices.",
+      "Smooth Navigation: Implemented using react-scroll for seamless section transitions.",
+      "Interactive Pricing: Dynamic pricing section with a toggle for Monthly/Annual plans using react-countup.",
+      "Modern UI/UX: Glassmorphism effects, gradients, and smooth transitions powered by Tailwind CSS.",
     ],
     // href: "",
-    github: "",
-    live: "",
+    github: "https://github.com/sherrykeos/ZORA",
+    live: "https://zora-livid.vercel.app/",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/ZORA_img.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "React",
+        path: "/assets/logos/techIcons/react.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
-      },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
         name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: "/assets/logos//techIcons/tailwindcss.svg",
       },
+      
     ],
   },
 
@@ -98,7 +91,7 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer intern",
+    title: "Technical intern",
     // job: "Software Developer intern at DRDO",
     date: "SEPT - OCT 2025",
     company: "DRDO (Defence Research and Development Organization)",
