@@ -74,7 +74,7 @@ export const mySocials = [
   // },
   {
     name: "GitHub",
-    href: "https://github.com/shaj001",
+    href: "https://github.com/sherrykeos",
     icon: "/assets/socials/githubwhiteicon.svg",
   },
   {
