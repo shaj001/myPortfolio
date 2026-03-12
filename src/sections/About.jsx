@@ -8,7 +8,7 @@ import { mySocials } from "../constants/myData.js";
 const About = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "public/resume.pdf";
+    link.href = "/resume.pdf";
     link.download = "Sharad_Resume.pdf";
     link.click();
   };
