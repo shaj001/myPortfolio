@@ -62,6 +62,36 @@ export const myProjects = [
     ],
   },
 
+   {
+    id: 2,
+    title: "Grid OX - Dynamic Tic-Tac-Toe Game",
+    description:
+      "Grid OX is a modern web-based strategy game built with React and Tailwind CSS. The project serves as a showcase for advanced frontend state management and game theory. It features a custom-built AI engine that calculates moves based on a shifting board state, offering a challenge that traditional 3x3 games simply cannot provide.",
+    subDescription: [
+      "The 3-Piece Rule: Each player is limited to exactly three active marks on the grid.",
+      "The Vanishing Act: When you place your 4th mark, your 1st mark (the oldest chronological move) instantly destabilizes and vanishes.",
+      "The Consequence: Stalemates are impossible. The game only ends when a player creates a line of three within a single temporal window before their own pieces start disappearing.",
+    ],
+    // href: "",
+    github: "https://github.com/sherrykeos/Grid_OX",
+    live: "https://gridox.vercel.app/",
+    logo: "",
+    image: "/assets/projects/gridox_img.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/techIcons/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos//techIcons/tailwindcss.svg",
+      },
+      
+    ],
+  },
+
 
 
 ];
