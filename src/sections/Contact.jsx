@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert.jsx";
-import { Globe } from "../components/Globe.jsx";
+import { Globe } from "../components/globe.jsx";
 import MagicBento from "../components/MagicBento.jsx";
 
 
