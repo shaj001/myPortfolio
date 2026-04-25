@@ -20,7 +20,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi I'm
+          Hey, I'm
         </motion.h1>
         <motion.h1
           className="text-5xl font-stretch-125% text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-orange-300"
@@ -108,7 +108,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi,I'm
+          Hey, I'm
         </motion.p>
         <motion.h1
           className="text-6xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-cyan-400"

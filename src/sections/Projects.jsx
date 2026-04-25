@@ -1,4 +1,5 @@
 import Project from "../components/Project.jsx";
+
 const Projects = () => {
   return (
     <section

@@ -4,7 +4,6 @@ import Alert from "../components/Alert.jsx";
 import { Globe } from "../components/globe.jsx";
 import MagicBento from "../components/MagicBento.jsx";
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",

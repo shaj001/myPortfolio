@@ -12,14 +12,12 @@ const Skill = () => {
       <div className='flex flex-col md:flex-row w-full md:gap-8 mt-1'>
 
         <div className='w-full md:w-1/2 flex items-center md:mt-8 order-2 md:order-1'>
-          <img src="public/assets/bg_assets/skill-img.svg" alt="" className="max-w-full h-auto" />
+          <img src="../assets/bg_assets/skill-img.svg" alt="" className="max-w-full h-auto" />
         </div>
 
         <div className='w-full md:w-1/2 space-y-4 order-1 md:order-2'>
           <SkillsSection />
         </div>
-
-
 
       </div>
       

@@ -1,5 +1,6 @@
 import { mySocials } from "../constants/myData.js";
 import ScrollToTopButton from "../components/ScrollToTopButton.jsx";
+
 const Footer = () => {
   return (
     <section className="flex flex-wrap items-center justify-between pb-3 text-sm text-neutral-400 c-space">

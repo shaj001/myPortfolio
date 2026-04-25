@@ -82,7 +82,7 @@ export const myProjects = [
     github: "https://github.com/sherrykeos/ZORA",
     live: "https://zora-livid.vercel.app/",
     logo: "",
-    image: "../assets/projects/zora_img.png",
+    image: "/assets/projects/zora_img.png",
     tags: [
       {
         id: 1,
