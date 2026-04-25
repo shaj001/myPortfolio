@@ -46,7 +46,7 @@ const BgMusic = () => {
   return (
     <>
       {/* Audio Element */}
-      <audio ref={audioRef} src="public/assets/bg_assets/bg_music.mp3" loop preload="auto" />
+      <audio ref={audioRef} src="../assets/bg_assets/bg_music.mp3" loop preload="auto" />
 
       {/* MUSIC TOGGLE */}
       <button

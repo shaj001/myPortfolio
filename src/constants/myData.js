@@ -52,7 +52,7 @@ export const myProjects = [
       {
         id: 1,
         name: "Python",
-        path: "public/assets/Icons/techIcons/python.svg",
+        path: "../assets/Icons/techIcons/python.svg",
       },
       {
         id: 2,
@@ -82,7 +82,7 @@ export const myProjects = [
     github: "https://github.com/sherrykeos/ZORA",
     live: "https://zora-livid.vercel.app/",
     logo: "",
-    image: "/assets/projects/zora_img.png",
+    image: "../assets/projects/zora_img.png",
     tags: [
       {
         id: 1,
