@@ -36,31 +36,31 @@ const CopyEmailButton = () => {
       onClick={copyToClipboard}
       whileHover={{ y: -5 }}
       whileTap={{ scale: 0.95 }}
-      className="relative px-4 py-4 text-sm text-center rounded-full border border-[#4b4b4b] font-extralight bg-[#2a2a4a] w-[12rem] cursor-pointer overflow-hidden"
+      className="relative p-2 text-xs text-center rounded-full border border-purple-500/20 shadow-xl shadow-indigo-900/30 font-extralight w-[11rem] cursor-pointer overflow-hidden  hover:bg-indigo-700 active:scale-95 active:bg-indigo-700 transition duration-150 ease-in-out"
     >
       <AnimatePresence mode="wait">
         {copied ? (
           <motion.p
             key="copied"
-            className="flex items-center justify-center gap-2"
+            className="flex items-center justify-center gap-2 text-neutral-400"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.1 }}
           >
-            <img src="/assets/copy-done.svg" className="w-5" alt="copy Icon" />
+            <img src="/assets/Icons/otherIcons/copy-done.svg" className="w-5 opacity-70" alt="copy Icon" />
             Email Copied ✓
           </motion.p>
         ) : (
           <motion.p
             key="copy"
-            className="flex items-center justify-center gap-2"
+            className="flex items-center justify-center gap-2 text-neutral-400"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.1 }}
           >
-            <img src="/assets/copy.svg" className="w-5" alt="copy icon" />
+            <img src="/assets/Icons/otherIcons/copy.svg" className="w-5 opacity-70" alt="copy icon" />
             Copy Email Address
           </motion.p>
         )}

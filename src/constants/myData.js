@@ -30,9 +30,45 @@ export const myProjects = [
   // },
 
   
+    {
+    id: 1,
+    title: "CortexFlow - MultiAgents AI Research assistant",
+    description:
+      "CortexFlow is a multi-step AI research assistant built with Streamlit and LangChain. It takes a topic, gathers web results, scrapes relevant source content, generates a structured research report, and produces a short critique of the final output.",
+    subDescription: [
+      "searches the web for relevant information",
+      "Smooth Navigation: Implemented using react-scroll for seamless section transitions.",
+      "extracts content from selected source URLs",
+      "writes a structured research report",
+      "reviews the report with a critic pass",
+      "exports the final report as PDF from the UI"
+    ],
+    // href: "",
+    github: "https://github.com/sherrykeos/CortexFlow-Multi-Agent-Research-System",
+    live: "https://cortexflow.streamlit.app/",
+    logo: "",
+    image: "/assets/projects/cortex_img.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "public/assets/Icons/techIcons/python.svg",
+      },
+      {
+        id: 2,
+        name: "Streamlit",
+        path: "/assets/Icons/techIcons/Streamlit.svg",
+      },
+      {
+        id: 3,
+        name: "LangChain",
+        path: "/assets/Icons/techIcons/Langchain.svg",
+      },
+    ],
+  },
 
      {
-    id: 1,
+    id: 2,
     title: "ZORA - SaaS Landing Page",
     description:
       "A modern, high-performance frontend landing page for ZORA, a conceptual AI-powered video editing tool. This project is a pure frontend implementation showcasing responsive design, smooth animations, and a clean user interface built with React and Tailwind CSS.",
@@ -46,24 +82,24 @@ export const myProjects = [
     github: "https://github.com/sherrykeos/ZORA",
     live: "https://zora-livid.vercel.app/",
     logo: "",
-    image: "/assets/projects/ZORA_img.png",
+    image: "/assets/projects/zora_img.png",
     tags: [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/techIcons/react.svg",
+        path: "/assets/Icons/techIcons/react.svg",
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: "/assets/logos//techIcons/tailwindcss.svg",
+        path: "/assets/Icons/techIcons/tailwindcss.svg",
       },
       
     ],
   },
 
    {
-    id: 2,
+    id: 3,
     title: "Grid OX - Dynamic Tic-Tac-Toe Game",
     description:
       "Grid OX is a modern web-based strategy game built with React and Tailwind CSS. The project serves as a showcase for advanced frontend state management and game theory. It features a custom-built AI engine that calculates moves based on a shifting board state, offering a challenge that traditional 3x3 games simply cannot provide.",
@@ -81,16 +117,18 @@ export const myProjects = [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/techIcons/react.svg",
+        path: "/assets/Icons/techIcons/react.svg",
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: "/assets/logos//techIcons/tailwindcss.svg",
+        path: "/assets/Icons/techIcons/tailwindcss.svg",
       },
       
     ],
   },
+
+  
 
 
 
@@ -100,7 +138,7 @@ export const mySocials = [
   // {
   //   name: "WhatsApp",
   //   href: "",
-  //   icon: "/assets/socials/whatsApp.svg",
+  //   icon: "/assets/icons/whatsApp.svg",
   // },
   {
     name: "GitHub",
@@ -125,7 +163,7 @@ export const experiences = [
     // job: "Software Developer intern at DRDO",
     date: "SEPT - OCT 2025",
     company: "DRDO (Defence Research and Development Organization)",
-    companyLogo: "/assets/logos/DRDOLogo.png",
+    companyLogo: "/assets/Icons/otherIcons/DRDOLogo.png",
     contents: [
       "At Defence Research and Development Organisation (DRDO), I developed a Magnetic Field Analysis Tool designed to evaluate magnetic field intensity and related electromagnetic properties from raw signal data",
       "The objective was to build a reliable system capable of processing signal and noise datasets to compute magnetic field intensity and extract meaningful physical parameters with high accuracy — without relying on cloud-based computation.",
@@ -144,6 +182,7 @@ export const experiences = [
       "Applied numerical methods to real-world electromagnetic data. Built a modular architecture separating computation and UI layers. Improved performance through optimized array operations. Gained exposure to defense-grade data validation and structured R&D workflows",
     ],
   },
+
 ];
 
 export const reviews = [];

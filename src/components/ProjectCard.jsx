@@ -2,7 +2,7 @@ const ProjectCard = ({ project, onOpen }) => {
   return (
     <div
       onClick={onOpen} // clicking anywhere opens modal
-      className="bg-neutral-900 rounded-xl overflow-hidden shadow-lg cursor-pointer hover:scale-[1.02] transition duration-300 flex flex-col"
+      className="border border-purple-500/20 shadow-xl shadow-indigo-900/30 rounded-xl overflow-hidden cursor-pointer hover:scale-[1.02] transition duration-300 flex flex-col"
     >
       {/* Project Image */}
       <img
@@ -25,7 +25,7 @@ const ProjectCard = ({ project, onOpen }) => {
           </p>
 
           {/* Fade effect */}
-          <div className="absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-neutral-900 to-transparent" />
+          <div className="absolute bottom-0 left-0 w-full h-6 bg-linear-to-t from-neutral-900/40 to-transparent" />
         </div>
 
         {/* Tech Stack */}

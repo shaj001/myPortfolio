@@ -35,17 +35,17 @@ function ViewResumeButton() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="flex justify-center items-center gap-2 text-[10px] md:text-base 
-        bg-gray-600 text-white px-4 py-2 rounded-lg cursor-pointer 
+        className="flex justify-center items-center md:text-base 
+        border border-purple-500/40 shadow-xl shadow-indigo-900/30 text-white px-4 py-2 rounded-2xl cursor-pointer 
         hover:-translate-y-1 hover:bg-indigo-700
         active:scale-95 active:bg-indigo-700
         transition duration-150 ease-in-out"
       >
-        View Resume
+
         <img
-          src="/assets/logos/viewIcon.png"
+          src="/assets/Icons/otherIcons/viewIcon.png"
           alt="view"
-          className="w-auto h-4 invert"
+          className="w-auto h-4 invert opacity-70"
         />
       </button>
 

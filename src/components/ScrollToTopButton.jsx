@@ -35,7 +35,7 @@ const ScrollToTopButton = () => {
         >
           <img 
           className="w-8 h-8 invert opacity-70 hover:opacity-100 transition duration-200 ease-in-out"
-          src="/assets/logos/scrollup.png" alt="Scroll to top" width={30} />
+          src="public/assets/Icons/otherIcons/scrollup.png" alt="Scroll to top" width={30} />
           
         </button>
       )}

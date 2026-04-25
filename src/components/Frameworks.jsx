@@ -44,14 +44,14 @@ export function Frameworks() {
       <OrbitingCircles iconSize={25} radius={100} >
         
         {innerSkills.map((skill, index) => (
-          <Icon key={skill + index} src={`/assets/logos/techIcons/${skill}.svg`} />
+          <Icon key={skill + index} src={`/assets/Icons/techIcons/${skill}.svg`} />
         ))}
       </OrbitingCircles>
 
       {/* Outer Circle */}
       <OrbitingCircles iconSize={30} radius={180} reverse speed={1.5}>
         {outerSkills.map((skill, index) => (
-          <Icon key={skill + index} src={`/assets/logos/techIcons/${skill}.svg`} />
+          <Icon key={skill + index} src={`/assets/Icons/techIcons/${skill}.svg`} />
         ))}
       </OrbitingCircles>
 

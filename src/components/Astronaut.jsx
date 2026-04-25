@@ -9,11 +9,13 @@ export function Astronaut(props) {
     "/models/tenhun_falling_spaceman_fanart.glb"
   );
   const { actions } = useAnimations(animations, group);
+
   useEffect(() => {
     if (animations.length > 0) {
       actions[animations[0].name]?.play();
     }
   }, [actions, animations]);
+
 
   const yPosition = useMotionValue(5);
   const ySpring = useSpring(yPosition, { damping: 30 });
@@ -42,6 +44,7 @@ export function Astronaut(props) {
                 name="Cube001_0"
                 geometry={nodes.Cube001_0.geometry}
                 material={materials["AstronautFallingTexture.png"]}
+                // meshStandardMaterial color="#000000"
                 skeleton={nodes.Cube001_0.skeleton}
               />
               <skinnedMesh

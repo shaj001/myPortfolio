@@ -16,8 +16,11 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <div className="flex flex-col items-center  mr-23">
-        <p className="text-lg">Crafted with ❤️ by Sherry Keos</p>
+      <div className="flex flex-col ml-0 items-center mx-auto md:mx-0 md:mr-23 ">
+        <p className="text-[15px] md:text-lg">Crafted with ❤️ by <a href="https://github.com/sherrykeos" target="_blank" className=" hover:text-lavender transition duration-150 ease-in-out">
+            Sherry Keos
+          </a>
+        </p>  
 
         <p className="text-xs pt-2">
           © 2026 sharad kumar. All rights reserved.

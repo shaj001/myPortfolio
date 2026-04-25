@@ -7,12 +7,20 @@ export const Timeline = ({ data }) => {
   const containerRef = useRef(null);
   const contentRef = useRef(null);
   const [height, setHeight] = useState(0);
+  const [expandedItems, setExpandedItems] = useState({});
+
+  const toggleExpand = (index) => {
+    setExpandedItems((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   useEffect(() => {
     if (contentRef.current) {
       setHeight(contentRef.current.offsetHeight);
     }
-  }, [data]);
+  }, [data, expandedItems]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -23,7 +31,7 @@ export const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <section className="c-space section-spacing" ref={containerRef}>
+    <section className="relative c-space section-spacing" ref={containerRef}>
       <h2 className="text-heading mb-16">My Work Experience</h2>
 
       <div ref={contentRef} className="relative pb-20">
@@ -71,11 +79,28 @@ export const Timeline = ({ data }) => {
                 <p className="text-neutral-400">{item.job}</p>
               </div>
 
-              {item.contents.map((content, idx) => (
-                <p key={idx} className="mb-3 text-neutral-400 leading-relaxed">
-                  {content}
-                </p>
-              ))}
+              {/* Descriptions Container */}
+              <div className={`relative ${!expandedItems[index] ? "max-h-[250px] overflow-hidden md:max-h-none md:overflow-visible" : ""}`}>
+                {item.contents.map((content, idx) => (
+                  <p key={idx} className="mb-3 text-neutral-400 leading-relaxed">
+                    {content}
+                  </p>
+                ))}
+                {/* Gradient overlay per item when collapsed */}
+                {!expandedItems[index] && (
+                  <div className="absolute bottom-0 left-0 w-full h-24 bg-linear-to-t from-black/50 to-transparent md:hidden z-20 pointer-events-none" />
+                )}
+              </div>
+
+              {/* View More / View Less Button per item (Mobile Only) */}
+              <div className="flex justify-center mt-4 md:hidden">
+                <button
+                  onClick={() => toggleExpand(index)}
+                  className="px-6 py-2 text-xs border border-purple-500/20 shadow-xl shadow-indigo-900/30 rounded-2xl text-neutral-300 hover:bg-indigo-900 hover:text-white transition z-30"
+                >
+                  {expandedItems[index] ? "Show Less" : "View More"}
+                </button>
+              </div>
             </div>
           </div>
         ))}

@@ -142,14 +142,16 @@ body {
   @apply row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }
 .grid-4 {
-  @apply row-span-1 md:col-span-2 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+  @apply row-span-1 md:col-span-6 h-[10rem] md:h-[5rem] relative overflow-hidden hover:-translate-y-1 duration-200;
 }
 .grid-5 {
   @apply row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }
 
 .grid-default-color {
-  @apply p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl border border-indigo-500/20
+  /* @apply p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl border border-indigo-500/20
+  shadow-xl shadow-indigo-900/20; */
+  @apply p-6  rounded-2xl border border-indigo-500/20
   shadow-xl shadow-indigo-900/20;
 }
 
@@ -201,4 +203,44 @@ body {
       transform: scale(1.02) translateY(-1px); 
     }
   }
+}
+
+
+
+@keyframes ray-travel {
+  from {
+    /* We start at 0 */
+    stroke-dashoffset: 0;
+  }
+  to {
+    /* We move exactly TWO lengths (the ray + the gap) to loop perfectly */
+    stroke-dashoffset: -4; 
+  }
+}
+
+.ray-svg {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.ray-path {
+  fill: none;
+  stroke:url(#ray-gradient);
+  stroke-width: 2;
+  stroke-linecap: round;
+  
+  /* 0.2 is the length of your ray (20% of the border) */
+  /* 0.8 is the empty space (80% of the border) */
+  /* Together they equal 1 (our pathLength) */
+  stroke-dasharray: 0.2 0.8; 
+  
+  animation: ray-travel 10s linear infinite;
+  
+  /* Optional: Add a glow to hide the edges */
+filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.5));
 }

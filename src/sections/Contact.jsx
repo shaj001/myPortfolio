@@ -1,7 +1,10 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert.jsx";
-import { Particles } from "../components/Particles.jsx";
+import { Globe } from "../components/Globe.jsx";
+import MagicBento from "../components/MagicBento.jsx";
+
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -52,20 +55,32 @@ const Contact = () => {
   };
   return (
     <section
-      className="relative flex flex-col items-center c-space section-spacing"
+      className="relative flex flex-col items-center c-space section-spacing "
       id="contact"
     >
-      <Particles
-        className="absolute inset-0 -z-50"
-        quantity={100}
-        ease={80}
-        color={"#ffffff"}
-        refresh
-      />
       {showAlert && <Alert type={alertType} text={alertMessage} />}
 
-      <div className="mb-8 bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
-      <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
+      <div className="mb-15 bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
+
+      <main className="flex flex-col md:flex-row md:gap-28 mt-8">
+
+        <div className="relative flex flex-col items-center justify-center order-2 md:order-1 mt-12 md:mt-10">
+          <figure className="relative w-[20rem] mb-10 sm:w-[30rem]">
+            <Globe />
+          </figure>
+          
+
+          {/* Glowing Stand / Pedestal */}
+          <div className="absolute bottom-[8%] w-3/4 max-w-[350px] h-10 bg-gradient-to-r from-transparent via-purple-600/30 to-transparent rounded-[100%] blur-md pointer-events-none" />
+          <div className="absolute bottom-[10%] w-50 max-w-[200px] h-4 border-b-[3px] border-purple-400/50 bg-gradient-to-r from-transparent via-purple-500/20 to-transparent rounded-[100%] shadow-[0_5px_30px_rgba(99,102,241,0.8)] pointer-events-none" />
+        </div>
+
+      <MagicBento
+                className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl w-[80%] md:w-full order-1 md:order-2"
+                particleCount={12}
+                glowColor="132,0,255"
+                clickEffect
+              >
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
@@ -76,7 +91,7 @@ const Contact = () => {
         <form className="w-full" onSubmit={handleSubmit}>
           <div className="mb-5">
             <label htmlFor="name" className="feild-label">
-              Full Name
+              Your Name
             </label>
             <input
               id="name"
@@ -125,12 +140,18 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation"
+            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation opacity-80"
           >
-            {!isLoading ? "Send" : "Sending..."}
+            {!isLoading ? "Transmit Message" : "Transmitting..."}
           </button>
         </form>
-      </div>
+        </MagicBento>
+    
+
+    
+
+
+      </main>
     </section>
   );
 };

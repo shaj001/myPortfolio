@@ -4,6 +4,7 @@ import CopyEmailButton from "../components/CopyEmailButton.jsx";
 import { Frameworks } from "../components/Frameworks.jsx";
 import ViewResumeButton from "../components/ViewResumePopup.jsx";
 import { mySocials } from "../constants/myData.js";
+import MagicBento from "../components/MagicBento.jsx";
 
 const About = () => {
   const downloadResume = () => {
@@ -18,18 +19,18 @@ const About = () => {
     <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[16rem] mt-12">
         {/* Grid 1 */}
-        <div className="flex grid-default-color grid-1">
-          <img
-            src="assets/coding-pov.png"
-            className="blur-[0.8px] absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] "
-          />
-          <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
+        <MagicBento
+          className=" p-6 border border-purple-500/20 shadow-xl shadow-indigo-900/30 rounded-2xl grid-1"
+          particleCount={12}
+          glowColor="132,0,255"
+          clickEffect
+        >
           <div className=" top flex  z-10  flex-col gap-6">
             <p className="headtext">Hi, I'm SHARAD KUMAR</p>
 
-            <div className="subtext text-white flex flex-col gap-4">
+            <div className="subtext text-gray-400 flex flex-col gap-4">
               <p>
                 I’m a Computer Science undergraduate focused on building
                 scalable digital products and intelligent systems. My work spans
@@ -50,101 +51,98 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
-        </div>
+        </MagicBento>
 
         {/* Grid 2 */}
-        <div
-          className=" grid-2 border border-indigo-500/20
-  shadow-xl shadow-indigo-900/30 rounded-2xl"
+        <MagicBento
+          className="p-6 rounded-2xl border border-purple-500/20 shadow-xl shadow-indigo-900/30 grid-2"
+          particleCount={12}
+          glowColor="132,0,255"
+          clickEffect
         >
-          <div
-            ref={grid2Container}
-            className="flex items-center justify-center w-full h-full"
-          >
-            <img
-              src="../assets/boxgbg2.jpg"
-              alt="blockBg"
-              className="w-full h-full object-cover "
-            />
-            <p className="absolute top-6 left-6 text-white font-medium">
-              MY RESUME
+          <div className="z-10 m w-[40%]">
+            <p className="text-sm md:text-lg text-neutral-300">Tech Stack</p>
+            <p className="text-neutral-400 text-xs md:text-sm text-pretty pt-3  ">
+              I specialize in a variety of languages, frameworks, and tools that
+              allow me to build robust and scalable applications
             </p>
-            <p className="absolute bottom-6 left-6 text-white font-medium"></p>
-
-            <div className="absolute bottom-7 right-4 flex flex-col justify-center items-center gap-4">
-              <button
-                className="flex justify-center items-center gap-2 text-[9px] md:text-base bg-gray-600 text-white px-4 py-2 rounded-lg cursor-pointer hover:-translate-y-1 duration-200 hover:bg-indigo-700  active:scale-60 
-               transition duration-100 ease-in-out active:bg-indigo-700"
-                onClick={downloadResume}
-              >
-                Download Resume
-                <img
-                  src="public/assets/logos/downloadIcon.png"
-                  alt=""
-                  className="w-auto h-4 invert"
-                />
-              </button>
-              <ViewResumeButton />
-            </div>
           </div>
-        </div>
+          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[45%] md:scale-120">
+            <Frameworks />
+          </div>
+        </MagicBento>
 
         {/* Grid 3 */}
-        <div className="grid-black-color grid-3">
+        <MagicBento
+          className="p-6 rounded-2xl border border-purple-500/20 shadow-xl shadow-indigo-900/30 grid-3"
+          particleCount={12}
+          glowColor="132,0,255"
+          clickEffect
+        >
           <div className="z-10 w-[50%]">
-            <p className="headtext">Time Zone</p>
-            <p className="subtext">
+            <p className=" mb-2 text-neutral-300 text-sm md:text-lg">
+              Time Zone
+            </p>
+            <p className="text-neutral-400 text-sm md:text-sm text-pretty">
               I'm from India, and open to remote work worldwide
             </p>
           </div>
-          <figure className="absolute left-[30%] top-[10%]">
+        <figure className="absolute left-[35%] top-[-1%] w-[20rem] sm:w-[30rem]">
             <Globe />
           </figure>
-        </div>
+        </MagicBento>
 
         {/* Grid 4 */}
-        <div className="  grid-special-color grid-4">
-          <div className="top-5 flex flex-col items-center">
-            <p className="text-lg md:text-xl font-medium">
-              Do you want to start a project together?
-            </p>
+        <MagicBento
+          className="p-4 rounded-2xl border border-purple-500/20 shadow-xl shadow-indigo-900/30 row-span-1 md:col-span-6 h-full md:h-[6rem] relative overflow-hidden hover:-translate-y-1 duration-200 flex flex-col md:flex-row justify-evenly items-center gap-6 md:gap-14"
+          particleCount={12}
+          glowColor="132,0,255"
+          clickEffect
+        >
 
-            <div className="mt-6">
-              <CopyEmailButton />
-            </div>
-          </div>
-
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-            <p className="text-white text-center">connect with me</p>
-
-            <div className="flex justify-center gap-6 mt-2 ">
+         
+         <div className="flex flex-col justify-center items-center order-2 md:order-1">
+            <p className="text-neutral-400 text-center text-sm  md:text-[16px]">Connect with Me</p>
+            <div className="flex justify-center gap-6 mt-3">
               {mySocials.map((social, index) => (
                 <a href={social.href} key={index} target="_blank">
                   <img
                     src={social.icon}
-                    className="w-5 h-5 cursor-pointer hover:-translate-y-1 duration-200  active:scale-60 transition duration-100 ease-in-out"
+                    className="w-5 h-5 cursor-pointer hover:-translate-y-1 duration-200 active:scale-60 transition duration-100 ease-in-out opacity-70"
                     alt={social.name}
                   />
                 </a>
               ))}
             </div>
           </div>
-        </div>
 
-        {/* Grid 5 */}
-        <div className="grid-default-color grid-5">
-          <div className="z-10 w-[50%]">
-            <p className="text-xl md:text-2xl">Tech Stack</p>
-            <p className="subtext pt-3">
-              I specialize in a variety of languages, frameworks, and tools taht
-              allow me to build robust and scalable applications
-            </p>
+          
+
+          <div className=" flex flex-col justify-center items-center order-3 md:order-2">
+            <p className="text-neutral-400 text-sm md:text-[16px] text-center">Do you want to start a project together?</p>
+            <div className="mt-1 w-full flex justify-center ">
+              <CopyEmailButton />
+            </div>
           </div>
-          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
-            <Frameworks />
+
+         <div className="flex flex-col gap-2 justify-center items-center order-1 md:order-3">
+            <div className="text-neutral-400 text-sm  md:text-[16px]"><p>My Resume</p></div>
+            <div className="flex justify-center items-center gap-2 w-full">
+              <button
+                className="flex justify-center items-center md:text-base border border-purple-500/40 shadow-xl shadow-indigo-900/30 text-white px-4 py-2 rounded-2xl cursor-pointer hover:-translate-y-1 hover:bg-indigo-700 active:scale-95 active:bg-indigo-700 transition duration-150 ease-in-out"
+                onClick={downloadResume}
+              >
+                <img
+              src="/assets/Icons/otherIcons/downloadIcon.png"
+                  alt="Download"
+                  className="w-auto h-4 invert opacity-70"
+                />
+              </button>
+              <ViewResumeButton />
+            </div>
           </div>
-        </div>
+
+        </MagicBento>
       </div>
     </section>
   );
