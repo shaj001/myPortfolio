@@ -82,7 +82,7 @@ export const myProjects = [
     github: "https://github.com/sherrykeos/ZORA",
     live: "https://zora-livid.vercel.app/",
     logo: "",
-    image: "/assets/projects/zora_img.png",
+    image: "/assets/projects/ZORA_img.png", // Update this to perfectly match your actual file's casing
     tags: [
       {
         id: 1,
