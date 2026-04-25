@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Globe } from "../components/globe.jsx";
+import { Globe } from "../components/Globe.jsx";
 import CopyEmailButton from "../components/CopyEmailButton.jsx";
 import { Frameworks } from "../components/Frameworks.jsx";
 import ViewResumeButton from "../components/ViewResumePopup.jsx";
