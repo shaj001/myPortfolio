@@ -1,3 +1,21 @@
+import {
+  SiExpress,
+  SiLangchain,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiSocketdotio,
+  SiStreamlit,
+  SiTailwindcss,
+  SiTypescript,
+  SiTensorflow,
+  SiPythonanywhere,
+  SiFastapi
+} from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+import { MdOutlineSecurity } from "react-icons/md";
+
+
 export const myProjects = [
   //template
   // {
@@ -28,10 +46,97 @@ export const myProjects = [
   //     },
   //   ],
   // },
-
-  
-    {
+ {
     id: 1,
+    title: "Zekros - Multiplayer Strategy Game Platform",
+    description:
+      "ZEKROS is a full-stack multiplayer game platform built around a custom game engine, real-time match management, player accounts, and persistent game history. The platform is designed to support configurable board games, AI opponents, matchmaking, and competitive player ratings.",
+    subDescription: [
+  "Custom D3T game engine for managing game state and match logic",
+  "Real-time multiplayer matches with room and player management",
+  "AI opponents with Minimax-based gameplay",
+  "Configurable Tic-Tac-Toe variant with dynamic board sizes",
+  "Persistent match history, moves, and player data with PostgreSQL"
+],
+    // href: "",
+    github: "https://github.com/sherrykeos/Zekros",
+    live: "https://zekros.vercel.app/",
+    logo: "",
+    image: "/assets/projects/zekros_img.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: SiReact,
+      },
+      {
+        id: 2,
+        name: "Express",
+        path: SiExpress,
+      },
+      {
+        id: 3,
+        name: "Socket.io",
+        path: SiSocketdotio,
+      },
+      {
+        id: 4,
+        name: "JS/TS",
+        path: SiTypescript,
+      },
+      {
+        id: 5,
+        name: "PostgreSQL",
+        path: SiPostgresql,
+      },
+    ],
+  },
+   {
+    id: 2,
+    title: "FareLens - AI-Powered Fare Prediction Tool",
+    description:
+      "FareLens is an AI-powered fare prediction tool that leverages machine learning algorithms to provide accurate estimates for taxi and ride-sharing services. The application integrates with real-time traffic data and historical fare information to deliver reliable predictions.",
+    subDescription: [
+  "Machine learning model for fare prediction",
+  "Integration with real-time traffic data",
+  "Historical fare data analysis",
+  "User-friendly interface for fare estimation"
+],
+    // href: "",
+    github: "https://github.com/sherrykeos/FareLens",
+    live: "https://farelens.vercel.app/",
+    logo: "",
+    image: "/assets/projects/farelens_img.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: SiPython,
+      },
+      {
+        id: 2,
+        name: "XGBoost",
+        path: SiPythonanywhere,
+      },
+      {
+        id: 3,
+        name: "React",
+        path: SiReact,
+      },
+      {
+        id: 4,
+        name: "FAST API",
+        path: SiFastapi,
+      },
+      {
+        id: 5,
+        name: "PostgreSQL",
+        path: SiPostgresql,
+      },
+    ],
+  },
+    {
+    id: 3,
     title: "CortexFlow - MultiAgents AI Research assistant",
     description:
       "CortexFlow is a multi-step AI research assistant built with Streamlit and LangChain. It takes a topic, gathers web results, scrapes relevant source content, generates a structured research report, and produces a short critique of the final output.",
@@ -52,54 +157,69 @@ export const myProjects = [
       {
         id: 1,
         name: "Python",
-        path: "../assets/Icons/techIcons/python.svg",
+        path: SiPython,
       },
       {
         id: 2,
         name: "Streamlit",
-        path: "/assets/Icons/techIcons/Streamlit.svg",
+        path: SiStreamlit,
       },
       {
         id: 3,
         name: "LangChain",
-        path: "/assets/Icons/techIcons/Langchain.svg",
+        path: SiLangchain,
       },
     ],
   },
 
-     {
-    id: 2,
-    title: "ZORA - SaaS Landing Page",
+  {
+    id: 4,
+    title: "Express Auth Kit - Node.js Authentication Boilerplate",
     description:
-      "A modern, high-performance frontend landing page for ZORA, a conceptual AI-powered video editing tool. This project is a pure frontend implementation showcasing responsive design, smooth animations, and a clean user interface built with React and Tailwind CSS.",
+      "Express Auth Kit is a robust authentication solution for Node.js applications, built with Express and MongoDB. It provides a comprehensive set of middleware and utilities for handling user registration, login, and session management.",
     subDescription: [
-      "Responsive Design: Fully optimized for desktop, tablet, and mobile devices.",
-      "Smooth Navigation: Implemented using react-scroll for seamless section transitions.",
-      "Interactive Pricing: Dynamic pricing section with a toggle for Monthly/Annual plans using react-countup.",
-      "Modern UI/UX: Glassmorphism effects, gradients, and smooth transitions powered by Tailwind CSS.",
+      "User Registration: Secure user account creation with email verification.",
+      "JWT Authentication: Stateless authentication using JSON Web Tokens.",
+      "Password Reset: Secure password recovery mechanism.",
+      "Role-Based Access Control: Granular permissions for different user roles.",
     ],
     // href: "",
-    github: "https://github.com/sherrykeos/ZORA",
-    live: "https://zora-livid.vercel.app/",
+    github: "https://github.com/sherrykeos/Express-Auth-Kit",
+    live: "https://github.com/sherrykeos/Express-Auth-Kit",
     logo: "",
-    image: "/assets/projects/ZORA_img.png", // Update this to perfectly match your actual file's casing
+    image: "/assets/projects/ExpressAuthkit_img.png",
     tags: [
       {
         id: 1,
-        name: "React",
-        path: "/assets/Icons/techIcons/react.svg",
+        name: "JavaScript",
+        path: SiReact,
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "/assets/Icons/techIcons/tailwindcss.svg",
+        name: "Node.js",
+        path: FaNode,
       },
-      
+      {
+        id: 3,
+        name: "postgreSQL",
+        path: SiPostgresql,
+      },
+      {
+        id: 4,
+        name: "JWT",
+        path: MdOutlineSecurity,
+      },
+      {
+        id: 5,
+        name: "express",
+        path: SiExpress,
+      },
+
     ],
   },
 
    {
-    id: 3,
+    id: 4,
     title: "Grid OX - Dynamic Tic-Tac-Toe Game",
     description:
       "Grid OX is a modern web-based strategy game built with React and Tailwind CSS. The project serves as a showcase for advanced frontend state management and game theory. It features a custom-built AI engine that calculates moves based on a shifting board state, offering a challenge that traditional 3x3 games simply cannot provide.",
@@ -117,12 +237,12 @@ export const myProjects = [
       {
         id: 1,
         name: "React",
-        path: "/assets/Icons/techIcons/react.svg",
+        path: SiReact,
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: "/assets/Icons/techIcons/tailwindcss.svg",
+        path: SiTailwindcss,
       },
       
     ],
@@ -164,23 +284,19 @@ export const experiences = [
     date: "SEPT - OCT 2025",
     company: "DRDO (Defence Research and Development Organization)",
     companyLogo: "/assets/Icons/otherIcons/DRDOLogo.png",
-    contents: [
-      "At Defence Research and Development Organisation (DRDO), I developed a Magnetic Field Analysis Tool designed to evaluate magnetic field intensity and related electromagnetic properties from raw signal data",
-      "The objective was to build a reliable system capable of processing signal and noise datasets to compute magnetic field intensity and extract meaningful physical parameters with high accuracy — without relying on cloud-based computation.",
-
-      "# Technical Implementation",
-      "> Built the computational backend using Python, leveraging: NumPy for numerical computation and vectorized operations Pandas for structured data handling and preprocessing.",
-      "> Implemented signal processing logic to: Separate noise from measured signal Perform intensity calculations Evaluate derived magnetic field characteristics.",
-      ">Implemented Fast Fourier Transform (FFT) for: Frequency-domain analysis of magnetic field signals, Noise separation and spectral component identification, Extraction of dominant frequency peaks and amplitude distribution",
-      ">Applied filtering and signal normalization techniques to improve signal-to-noise ratio (SNR) and enhance measurement accuracy.",
-
-      ">Developed multiple interfaces for deployment flexibility: Next.js web-based frontend for interactive visualization Desktop tool version using PyQt Lightweight Ubuntu-compatible interface using Tkinter",
-      "The tool was designed to work completely offline, ensuring operational security and reliability in controlled environments.",
-
-      "# Impact & Learning",
-
-      "Applied numerical methods to real-world electromagnetic data. Built a modular architecture separating computation and UI layers. Improved performance through optimized array operations. Gained exposure to defense-grade data validation and structured R&D workflows",
-    ],
+  contents: [
+  "At DRDO, developed an offline Magnetic Field Analysis Tool using Python, NumPy, and Pandas to process electromagnetic signal and noise data, calculate magnetic field intensity, and extract meaningful physical parameters. Implemented FFT-based frequency analysis, filtering, normalization, and noise separation to improve signal quality and analysis accuracy. Built web and desktop interfaces using Next.js, PyQt, and Tkinter, with a modular architecture separating the analysis engine from the user interface."
+],
+  },
+  {
+    title: "SDE intern",
+    // job: "Software Developer intern at DRDO",
+    date: "JUNE - JULY 2026",
+    company: "Airport Authority of India",
+    companyLogo: "public/assets/Icons/otherIcons/AAI_logo.jpg",
+ contents: [
+  "At Airports Authority of India (AAI), developed AERODROME, a full-stack ML-based airline fare prediction platform using React, FastAPI, PostgreSQL, XGBoost, and Scikit-learn. Trained models on 300,000+ domestic fare records to generate real-time fare predictions, with interactive route and price-trend visualizations, secure authentication, and rate-limited APIs."
+],
   },
 
 ];

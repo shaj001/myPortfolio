@@ -38,16 +38,20 @@ const ProjectDetails = ({ project, closeModal }) => {
             ))}
           </ul>
 
-          {/* Tech Stack Logos */}
-          <div className="flex flex-wrap gap-3 mb-3 shrink-0 animate-pop">
-            {project.tags.map((tag) => (
-              <img
-                key={tag.id}
-                src={tag.path}
-                alt={tag.name}
-                className="w-6 h-6 md:w-8 md:h-8 flex"
-              />
-            ))}
+         {/* Tech Stack Logos */}
+<div className="flex flex-wrap gap-3 mb-3 shrink-0">
+  {project.tags.map((tag) => {
+    const Icon = tag.path;
+
+    return (
+      <Icon
+        key={tag.id}
+        aria-label={tag.name}
+        className="w-4 h-4 md:w-6 md:h-6 animate-icon-rotate"
+        style={{ animationDelay: `${tag.id * 0.15}s` }}
+      />
+    );
+  })}
             
           </div>
 

@@ -193,14 +193,14 @@ body {
 /* projectDetail tech icon animation */
 
 @theme {
-  --animate-pop: pop 2s ease-in-out infinite;
+  --animate-icon-rotate: icon-rotate 6s linear infinite;
 
-  @keyframes pop {
-    0%, 100% { 
-      transform: scale(1) translateY(0); 
+  @keyframes icon-rotate {
+    from {
+      transform: rotate(0deg);
     }
-    50% { 
-      transform: scale(1.02) translateY(-1px); 
+    to {
+      transform: rotate(360deg);
     }
   }
 }
