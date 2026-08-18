@@ -293,7 +293,7 @@ export const experiences = [
     // job: "Software Developer intern at DRDO",
     date: "JUNE - JULY 2026",
     company: "Airport Authority of India",
-    companyLogo: "public/assets/Icons/otherIcons/AAI_logo.jpg",
+    companyLogo: "/assets/Icons/otherIcons/AAI_logo.jpg",
  contents: [
   "At Airports Authority of India (AAI), developed AERODROME, a full-stack ML-based airline fare prediction platform using React, FastAPI, PostgreSQL, XGBoost, and Scikit-learn. Trained models on 300,000+ domestic fare records to generate real-time fare predictions, with interactive route and price-trend visualizations, secure authentication, and rate-limited APIs."
 ],
