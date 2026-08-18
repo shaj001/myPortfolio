@@ -32,22 +32,13 @@ const About = () => {
 
             <div className="subtext text-gray-400 flex flex-col gap-4">
               <p>
-                I’m a Computer Science undergraduate focused on building
-                scalable digital products and intelligent systems. My work spans
-                backend engineering, web platforms, and AI-driven applications.
+               I’m a Computer Science undergraduate and full-stack developer who enjoys building real products at the intersection of software engineering and AI. I focus on turning ideas into functional systems rather than just building demos.
               </p>
               <p>
-                I work primarily with Python, C++, and JavaScript, with hands-on
-                experience in building full-stack systems using Node.js and
-                MongoDB. Alongside software development, I’m deeply interested
-                in Aerospace computing, Mathematical modeling, and advanced
-                engineering problems.
-              </p>
+                My current work spans AI-powered research tools, intelligent data platforms, real-time multiplayer systems, and full-stack applications. I primarily work with Python, JavaScript, React, Node.js, FastAPI, PostgreSQL, and modern AI/ML technologies. 
+                </p>
               <p>
-                Currently, I’m building product-oriented platforms and exploring
-                the intersection of AI, physics, and large-scale system design.
-                My long-term goal is to contribute to high-impact engineering
-                projects in aerospace and intelligent automation.
+                Beyond software, I’m interested in AI, aerospace computing, physics, and mathematical modeling. I’m currently exploring the intersection of intelligent systems and engineering while strengthening my foundations in computer science and system design.
               </p>
             </div>
           </div>

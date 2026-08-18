@@ -1,7 +1,6 @@
 import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
 import TextType from "./TextType.jsx";
-import GradientText from "./GradientText";
 
 const HeroText = () => {
   const words = ["Secure", "Modern", "Scalable"];
@@ -23,21 +22,16 @@ const HeroText = () => {
           Hey, I'm
         </motion.h1>
         <motion.h1
-          className="text-5xl font-stretch-125% text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-orange-300"
-          style={{ fontFamily: "'Satisfy', cursive" }}
+          className="text-5xl font-stretch-125% text-white"
+          style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
         >
-          <GradientText
-            colors={["#5227FF", "#FF9FFC", "#B497CF"]}
-            animationSpeed={8}
-            showBorder={false}
-            className="custom-class"
-          >
+          <p>
             SHARAD KUMAR
-          </GradientText>
+          </p>
         </motion.h1>
         <motion.h3
           className="text-2xl font-medium text-indigo-300 mt-4"
@@ -46,7 +40,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1.2 }}
         >
-          <span className="text-lg text-neutral-500">AKA:</span> <span className="text-neutral-400" style={{ fontFamily: "'Orbitron', sans-serif" }}>"Sherry Keos"</span>
+          <span className="text-lg text-neutral-500">AKA:</span> <span className="text-neutral-400">"Sherry Keos"</span>
           <TextType
             className="ml-8 text-lg mt-2"
             text={[
@@ -111,22 +105,14 @@ const HeroText = () => {
           Hey, I'm
         </motion.p>
         <motion.h1
-          className="text-6xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-cyan-400"
-          style={{ fontFamily: "'Satisfy', cursive" }}
+          className="text-6xl font-extrabold text-white"
+          style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
         >
-          <GradientText
-            colors={["#5227FF", "#FF9FFC", "#B497CF"]}
-            animationSpeed={8}
-            showBorder={false}
-            className="custom-class"
-          >
-            {/* <span className="text-5xl">SHARAD<br /> KUMAR</span>  */}
-            SHARAD
-          </GradientText>
+          SHARAD
         </motion.h1>
 
         <motion.h3
@@ -136,7 +122,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1.2 }}
         >
-           <span className="text-neutral-400" style={{ fontFamily: "'Orbitron', sans-serif" }}>AKA: "Sherry Keos"</span> <br/>
+           <span className="text-neutral-400">AKA: "Sherry Keos"</span> <br/>
           <TextType
             className=" text-lg mt-1"
             text={[
